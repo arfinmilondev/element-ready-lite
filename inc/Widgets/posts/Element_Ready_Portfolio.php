@@ -3173,7 +3173,7 @@ class Element_Ready_Portfolio extends Widget_Base
                 ],
 
                 'selectors' => [
-                    '{{WRAPPER}} span.er-port-image-abs-icon' => 'width: {{SIZE}}{{UNIT}};height:{{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} a.er-port-image-abs-icon' => 'width: {{SIZE}}{{UNIT}};height:{{SIZE}}{{UNIT}};',
                 ],
             ]
         );
@@ -3196,7 +3196,7 @@ class Element_Ready_Portfolio extends Widget_Base
                 ],
 
                 'selectors' => [
-                    '{{WRAPPER}} span.er-port-image-abs-icon' => 'left: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} a.er-port-image-abs-icon' => 'left: {{SIZE}}{{UNIT}};',
                 ],
             ]
         );
@@ -3219,7 +3219,7 @@ class Element_Ready_Portfolio extends Widget_Base
                 ],
 
                 'selectors' => [
-                    '{{WRAPPER}} span.er-port-image-abs-icon' => 'top: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} a.er-port-image-abs-icon' => 'top: {{SIZE}}{{UNIT}};',
                 ],
             ]
         );
@@ -4692,9 +4692,9 @@ class Element_Ready_Portfolio extends Widget_Base
                     <div class="er-gallery-nested-container">
                         <h3><?php echo get_the_title(); ?></h3>
                         <p><?php echo  wp_trim_words(get_the_content(), $settings['content_length'], ''); ?></p>
-                        <span class="er-port-image-abs-icon">
+                        <a href="<?php echo get_the_permalink(); ?>" class="er-port-image-abs-icon">
                             <?php \Elementor\Icons_Manager::render_icon($settings['readmore_icon'], ['aria-hidden' => 'true']); ?>
-                        </span>
+                        </a>
                     </div>
                 </div>
             </div>

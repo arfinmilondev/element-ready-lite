@@ -46,6 +46,7 @@
   width: 100%;
   height: 40%;
   color: #fff;
+  color: #fff;
   transition: 0.3s;
   padding: 30px;
 }
@@ -636,12 +637,13 @@ a.readmore__btn {
   padding: 40px;
 }
 
-span.er-port-image-abs-icon {
+a.er-port-image-abs-icon {
   position: absolute;
   top: 0;
+  list-style: none;
 }
 
-span.er-port-image-abs-icon {
+a.er-port-image-abs-icon {
   width: 65px;
   height: 65px;
   background: #1befa2;

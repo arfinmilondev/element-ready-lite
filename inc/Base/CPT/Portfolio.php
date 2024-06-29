@@ -42,7 +42,7 @@ class Portfolio extends Custom_Post
     public function create_post_type(){
 
         $this->init( 'portfolio', $this->name, $this->menu, array( 'menu_icon' => 'dashicons-portfolio',
-            'supports'            => array( 'title','thumbnail','editor','revisions','page-attributes' ),
+            'supports'            => array( 'title','thumbnail','editor','revisions','page-attributes','excerpt'),
             'rewrite'             => array( 'slug' => $this->slug ),
             'exclude_from_search' => $this->search,
             'has_archive'         => false,                                               // Set to false hides Archive Pages
